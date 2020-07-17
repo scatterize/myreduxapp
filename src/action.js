@@ -4,10 +4,9 @@ export const inc = () => ({
 export const dec = () => ({
   type: 'DEC',
 });
-export const rnd = (value) => {
-  console.log(value);
+export const rnd = () => {
   return {
     type: 'RND',
-    value: value,
+    value: +Math.floor(Math.random() * 11),
   };
 };
